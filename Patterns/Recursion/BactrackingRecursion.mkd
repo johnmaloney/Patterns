@@ -1,0 +1,52 @@
+﻿Backtracking Recursions 
+In the processs of recursion it is sometimes necessary to revert a decision because 
+we have made it further down the tree and realized that an earlier decision is causing
+issues within the recursion.
+
+PSUEDO code:
+bool Solve (configuration config)
+{ 
+	// BASE CASE //
+	if (no more choices) 
+		return (config in goal state)
+
+	for (all available choices)
+	{
+		try one choice c;
+
+		// Solve from here if it works out your done //
+		if Solve(config with choice)
+		{
+			return true;
+		}
+
+		// if we didnt return true above then we keep going //
+		return false;
+	}
+}
+
+This can be imagined in the following chained conversation
+
+CEO: Ok team we need to fix this problem! Go for it.
+
+Manager 1: Ok managers I need you to work through to your most junior 
+			employee and solve this problem.
+
+Manager 1.1: Hey junior worker make this problem work with this wrench!
+
+Worker 1: I tried all possible solutions and none worked with that wrench.
+
+Manager 1.1: Ok it must have been my fault lets try this screwdriver.
+
+Worker 1: That worked for my problem, so hey junior worker solve this problem
+		with this screwdriver!
+
+Worker 1.1: I tried every possible solution with that screwdriver and none of
+		them worked.
+
+Worker 1: Oh thats my fault, Manager 1.1 this screwdriver does not solve the 
+		problem that Worker 1.1 isn solving.
+
+Manager 1.1: Sorry, lets try this jackhammer.
+
+And on and on until all workers have the right mixture of tools to solve the problem
