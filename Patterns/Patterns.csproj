@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PipesFilter\Interfaces\AParallelPipe.cs" />
+    <Compile Include="PipesFilter\Interfaces\APipe.cs" />
+    <Compile Include="PipesFilter\Interfaces\IParallelPipe.cs" />
+    <Compile Include="PipesFilter\Interfaces\IPipe.cs" />
+    <Compile Include="PipesFilter\Interfaces\IPipeContext.cs" />
     <Compile Include="Recursion\EightQueens.cs" />
     <Compile Include="Recursion\HanoiTower.cs" />
     <Compile Include="Recursion\Permutations.cs" />
@@ -71,6 +76,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PipesFilter\Implementations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
