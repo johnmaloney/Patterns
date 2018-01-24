@@ -52,13 +52,20 @@
   <ItemGroup>
     <Compile Include="RecursionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrategyInitializationTests.cs" />
     <Compile Include="TestExtensions.cs" />
+    <Compile Include="StrategyPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Patterns\Patterns.csproj">
       <Project>{3dea8c12-0a89-404d-8c6f-75fb259dc2fd}</Project>
       <Name>Patterns</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dictionary\dictionary.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

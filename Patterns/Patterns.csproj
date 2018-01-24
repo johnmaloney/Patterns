@@ -54,6 +54,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Recursion\RecursiveBackTracker.cs" />
+    <Compile Include="Strategy\Implementations\StringSearch.cs" />
+    <Compile Include="Strategy\Implementations\TreeStrategy.cs" />
+    <Compile Include="Strategy\Interfaces\IStrategy.cs" />
+    <Compile Include="Strategy\Interfaces\IStringSearch.cs" />
+    <Compile Include="Strategy\Interfaces\ITree.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Dictionary\dictionary.json" />

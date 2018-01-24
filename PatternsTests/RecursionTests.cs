@@ -32,9 +32,9 @@ namespace PatternsTests
 
             tower.MoveTower(source.Count, source, destination, temporary);
 
-            Assert.AreEqual(0, source);
-            Assert.AreEqual(amountOfDisks, destination);
-            Assert.AreEqual(0, temporary);
+            Assert.AreEqual(0, source.Count);
+            Assert.AreEqual(amountOfDisks, destination.Count);
+            Assert.AreEqual(0, temporary.Count);
         }
 
         [TestMethod]
@@ -57,6 +57,7 @@ namespace PatternsTests
         }
 
         [TestMethod]
+        [DeploymentItem("Dictionary/dictionary.json", "/")]
         public void discover_if_set_of_text_can_be_word()
         {
             var backTracker = new WordBackTracker();

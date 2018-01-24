@@ -35,8 +35,9 @@ namespace Patterns.Recursion
 
         public WordBackTracker()
         {
+            string location = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             // this can be copied from the Patterns project into your C: drive //
-            dictionary = JObject.Parse(File.ReadAllText(@"c:\temp\dictionary.json"));
+            dictionary = JObject.Parse(File.ReadAllText(location + @"\Dictionary\dictionary.json"));
 
             this.PossibleWords = new List<string>();
         }
