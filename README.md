@@ -28,3 +28,11 @@ then to use the method:
 ```
     Strategy.For<IStringSearch>().HasWithin(searchFor, searchWithin)
 ```
+
+## Pipes and Filters Pattern
+This pattern is a variation on the long standing Pipes and Filters pattern. The example stays within the 
+purpose of the pattern but terms the group of pipes as a pipeline and the filter as the "Process" method of a pipe 
+(i.e. no explicit class for the filter concept).
+
+
+
