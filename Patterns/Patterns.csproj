@@ -44,6 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blockchain\ABlockHeader.cs" />
+    <Compile Include="Blockchain\Block.cs" />
+    <Compile Include="Blockchain\Cryptography\DigitalSignature.cs" />
+    <Compile Include="Blockchain\Cryptography\Hashing.cs" />
+    <Compile Include="Blockchain\DataItem.cs" />
+    <Compile Include="Blockchain\IBlock.cs" />
+    <Compile Include="Blockchain\IBlockChain.cs" />
     <Compile Include="PipesFilter\Interfaces\AParallelPipe.cs" />
     <Compile Include="PipesFilter\Interfaces\APipe.cs" />
     <Compile Include="PipesFilter\Interfaces\IParallelPipe.cs" />

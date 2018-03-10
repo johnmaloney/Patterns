@@ -57,6 +57,7 @@
     <Compile Include="StrategyPattern.cs" />
     <Compile Include="PipelineTests.cs" />
     <Compile Include="ParallelPipelineTests.cs" />
+    <Compile Include="CryptographyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Patterns\Patterns.csproj">
