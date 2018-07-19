@@ -37,5 +37,5 @@ purpose of the pattern but terms the group of pipes as a pipeline and the filter
 Blockchain 
 
 Merkle Tree
-![alt text](https://goo.gl/images/dL4SsL)
+![alt text](https://www.enterpriseintegrationpatterns.com/img/PipesAndFilters.gif)
 
