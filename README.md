@@ -34,8 +34,13 @@ This pattern is a variation on the long standing Pipes and Filters pattern. The 
 purpose of the pattern but terms the group of pipes as a pipeline and the filter as the "Process" method of a pipe 
 (i.e. no explicit class for the filter concept).
 
-Blockchain 
-
-Merkle Tree
 ![alt text](https://www.enterpriseintegrationpatterns.com/img/PipesAndFilters.gif)
+
+[Pipes and Filters .Net Fiddle Example](https://dotnetfiddle.net/yS7TKn) 
+
+##Blockchain 
+
+
+###Merkle Tree
+
 
