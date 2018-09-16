@@ -51,6 +51,7 @@
     <Compile Include="Blockchain\DataItem.cs" />
     <Compile Include="Blockchain\IBlock.cs" />
     <Compile Include="Blockchain\IBlockChain.cs" />
+    <Compile Include="PipesFilter\Implementations\JSONProcessPipeline.cs" />
     <Compile Include="PipesFilter\Interfaces\AParallelPipe.cs" />
     <Compile Include="PipesFilter\Interfaces\APipe.cs" />
     <Compile Include="PipesFilter\Interfaces\IParallelPipe.cs" />
@@ -84,9 +85,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PipesFilter\Implementations\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
