@@ -12,32 +12,32 @@ namespace Patterns.Strategy.Implementations
     /// </summary>
     public class Tree : ITree
     {
-        public string Navigate()
+        public string Navigate(As version = As.Default)
         {
-            return Strategy.For<IBranch>().Navigate();
+            return Strategy.For<IBranch>(version).Navigate(version);
         }
     }
 
     public class BranchA : IBranch
     {
-        public string Navigate()
+        public string Navigate(As version = As.Default)
         {
-            return Strategy.For<ILeaf>().Read();
+            return Strategy.For<ILeaf>(version).Read(version);
         }
     }
 
     public class BranchB : IBranch
     {
-        public string Navigate()
+        public string Navigate(As version = As.Default)
         {
             var leaf = new LeafB();
-            return leaf.Read();
+            return leaf.Read(version);
         }
     }
 
     public class BranchC : IBranch
     {
-        public string Navigate()
+        public string Navigate(As version = As.Default)
         {
             return "This is not the branch you are looking for...";
         }
@@ -45,7 +45,7 @@ namespace Patterns.Strategy.Implementations
 
     public class LeafA : ILeaf
     {
-        public string Read()
+        public string Read(As version = As.Default)
         {
             return "Read Leaf A";
         }
@@ -53,7 +53,7 @@ namespace Patterns.Strategy.Implementations
 
     public class LeafB : ILeaf
     {
-        public string Read()
+        public string Read(As version = As.Default)
         {
             return "Read Leaf B";
         }
@@ -61,7 +61,7 @@ namespace Patterns.Strategy.Implementations
 
     public class LeafC : ILeaf
     {
-        public string Read()
+        public string Read(As version = As.Default)
         {
             return "Read Leaf C";
         }

@@ -8,16 +8,16 @@ namespace Patterns.Strategy.Interfaces
 {
     public interface ITree : IStrategy
     {
-        string Navigate();
+        string Navigate(As version = As.Default);
     }
 
     public interface IBranch : IStrategy
     {
-        string Navigate();
+        string Navigate(As version = As.Default);
     }
 
     public interface ILeaf : IStrategy
     {
-        string Read();
+        string Read(As version = As.Default);
     }
 }

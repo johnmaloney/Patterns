@@ -25,7 +25,7 @@ namespace Patterns.Blockchain
 
         public string PreviousBlockHash { get; private set; }
 
-        public IBlock NextBlock { get; private set; }
+        public IBlock NextBlock { get; set; }
 
         #endregion
 

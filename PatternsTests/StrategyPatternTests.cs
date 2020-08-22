@@ -3,11 +3,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Patterns.Strategy;
 using Patterns.Strategy.Interfaces;
 using Patterns.Strategy.Implementations;
+using PatternsTests.Base;
 
 namespace PatternsTests
 {
     [TestClass]
-    public class StrategyTests
+    public class StrategyTests : ATest
     {
         private string searchWithin = @"Stormtrooper: Let me see your identification.
                                         Ben Obi-Wan Kenobi: [with a small wave of his hand] You don't need to see his identification.
@@ -19,12 +20,6 @@ namespace PatternsTests
                                         Ben Obi - Wan Kenobi: Move along.
                                         Stormtrooper: Move along...move along.";
 
-        [TestInitialize]
-        public void InitializeEachTime()
-        {
-            Strategy.AddStrategy<IStringSearch>(new StringSearch());
-        }
-
         [TestMethod]
         public void string_search_implementation_expect_results()
         {
@@ -34,13 +29,10 @@ namespace PatternsTests
             Assert.IsFalse(contains);
 
             //switch the strategy to case insensitive, to show the injection potential //
-            Strategy.AddStrategy<IStringSearch>(new StringSearchCI());
-            contains = Strategy.For<IStringSearch>().HasWithin(searchFor, searchWithin);
+            Strategy.AddStrategy<IStringSearch>(new StringSearchCI(), As.v2);
+            contains = Strategy.For<IStringSearch>(As.v2).HasWithin(searchFor, searchWithin);
             Assert.IsTrue(contains);
-
-            // Revert back to default //
-            Strategy.AddStrategy<IStringSearch>(new StringSearch());
-            
+                        
             // search for a string the is a partial //
             searchFor = "ident";
             contains = Strategy.For<IStringSearch>().HasWithin(searchFor, searchWithin);
