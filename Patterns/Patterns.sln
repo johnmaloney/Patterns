@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns.csproj", "{3DEA8C12-0A89-404D-8C6F-75FB259DC2FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterns", "Patterns.csproj", "{3DEA8C12-0A89-404D-8C6F-75FB259DC2FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsTests", "..\PatternsTests\PatternsTests.csproj", "{45493BDC-5D0D-4F3A-A7EE-0FF60541D204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternsTests", "..\PatternsTests\PatternsTests.csproj", "{45493BDC-5D0D-4F3A-A7EE-0FF60541D204}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{2453D59C-1B7E-48BD-A87C-929AD89F7192}"
 	ProjectSection(SolutionItems) = preProject
