@@ -8,7 +8,12 @@ namespace PatternsTests
     [TestClass]
     public class PipelineTests
     {
-        [TestMethod]
+        [TestMethod]        
+            // 20 + 1 = 21: 
+            // 21 -1 - 1 - 1 = 18
+            // 18 + 1 + 1 + 1 = 21
+            // 21 * 2 = 42
+            // 42 - 1 = 41
         public void generate_a_tree_based_pipeline_expect_proper_execution()
         {
             var context = new MathPipeContext(initialValue: 20);
@@ -31,11 +36,6 @@ namespace PatternsTests
 
             masterPipe.Process(context);
 
-            // 20 + 1 = 21: 
-            // 21 -1 - 1 - 1 = 18
-            // 18 + 1 + 1 + 1 = 21
-            // 21 * 2 = 42
-            // 42 - 1 = 41
             Assert.AreEqual(41, context.Result);
         }
 
